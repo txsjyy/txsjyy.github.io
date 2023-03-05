@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Mortgage Calculator</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Mortgage calculator">
+   <meta name="author" content="Junyu Yao">
+   <link rel="stylesheet" href="calculator.css">
+   <script src="calculator.js" defer></script>
+</head> 
+    <form>
+        <table>
+            <caption>Mortgage Calculator</caption>
+            <tr>
+                <th>Principal amount :</th>
+                <td><input type="text" id="principal"></td>
+            </tr>
+            <tr>
+                <th>Yearly interest rate :</th>
+                <td><input type="text" id="interest"></td>
+            </tr>
+            <tr>
+                <th>Loan term in months :</th>
+                <td><input type="text" id="month"></td>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="calculate()" >Submit</button>
+                </th>
+                <th><input type="reset"></th>
+            </tr>
+            <tr>
+                <th>Monthly payments :</th>
+                <th id="pay"></th>
+            </tr>
+            <tr>
+                <th>Sum of all payments :</th>
+                <th id="sum"></th>
+            </tr>
+            <tr>
+                <th>Total interest paid :</th>
+                <th id="int"></th>
+            </tr>
+        </table>
+    </form>
+<footer>
+    <a href="mailto:txsjyy@gmail.com">Junyu Yao</a>
+    2023-03-01
+</footer>
+</body>
+
+</html>

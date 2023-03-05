@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Galaxies</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="RandomImage">
+   <meta name="author" content="Junyu Yao">
+   <link rel="stylesheet" href="galaxies.css">
+</head> 
+
+<body onload="changeImg()">
+    <p>
+        <img class="img1" id="M51" src="M51.jpg" alt="(Picture of M51)">
+        <img class="img2" id="M104" src="M104.jpg" alt="(Picture of M104)">
+        <img class="img3" id="NGC1300" src="NGC1300.jpg" alt="(Picture of NGC1300)">
+        <img class="img4" id="NGC6217" src="NGC6217.jpg" alt="Picture of NGC6217">
+        <img class="img5" id="GalaxyCluster" src="GalaxyCluster.jpg" alt="Picture of GalaxyCluster">
+        <img class="img6" id="InteractingGalaxies" src="InteractingGalaxies.jpg" alt="Picture of InteractingGalaxies">
+        <div class="cap1" id="cap1">Galaxy M51</div>
+        <div class="cap2" id="cap2">Galaxy M104</div>
+        <div class="cap3" id="cap3">Galaxy NGC1300</div>
+        <div class="cap4" id="cap4">Galaxy NGC6217</div>
+        <div class="cap5" id="cap5">Galaxy Cluster</div>
+        <div class="cap6" id="cap6">Interacting Galaxies</div>
+    </p>
+</body>
+</html>
+<script>
+    var top_img = "M51";
+    var top_cap = "cap1"
+    var img_src = new Array ("M51", "M104", "NGC1300","NGC6217","GalaxyCluster","InteractingGalaxies");
+    var cap_src = new Array ("cap1","cap2","cap3","cap4","cap5","cap6",)
+
+    function get_img () {
+        var rnd_idx = Math.trunc (Math.random() * img_src.length);
+        return [img_src[rnd_idx],cap_src[rnd_idx]];
+    }
+
+    function changeImg() {
+        var [new_img,new_cap] = get_img();
+        styleTop = document.getElementById(top_img).style;
+        styleNew = document.getElementById(new_img).style;
+        capTop = document.getElementById(top_cap).style;
+        capTop = document.getElementById(new_cap).style;
+
+        styleTop.zIndex = "0";
+        styleNew.zIndex = "10";
+        capTop.zIndex = "0";
+        capTop.zIndex = "10"
+
+        top_cap = new_cap
+        top_img = new_img;
+    }
+
+</script>

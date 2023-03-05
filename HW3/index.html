@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Campus Visit Feedback Form</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Campus Visit Feedback Form">
+   <meta name="author" content="Junyu Yao">
+</head>
+
+<body>
+   <form method = "POST" >
+      <table>
+         <caption><h1>Campus Visit Feedback Form</h1></caption>
+         <tr>
+            <th>userID:</th>
+            <td><input name = "name" type = "text" size = "30" ></td>
+         </tr>
+         <tr>
+            <th>
+            <label>
+               Street Address:
+            </label>
+            </th>
+            <td><input name = "Address" type = "text" size = "30" ></td>
+         </tr>
+         <tr>
+            <th>
+            <label>
+               Email Address:
+            </label>
+            </th>
+            <td><input name = "email" type = "password" size = "30" ></td>
+         </tr>
+         <tr><th colspan="2">Things you liked about UT:</th></tr>
+         <tr>
+               <td colspan="2">
+                     Students <input name = "attraction[]" type = "checkbox" value = "Students" >
+                     Location  Price <input name = "attraction[]" type = "checkbox" value = "Location" >
+                     Campus <input name = "attraction[]" type = "checkbox" value = "Campus" >
+                     Courses Offered <input name = "attraction[]" type = "checkbox" value = "Courses Offered">
+                     Housing<input name = "attraction[]" type = "checkbox" value = "Housing">
+                     Sports<input name = "attraction[]" type = "checkbox" value = "Sports">
+               </td>
+            </tr>
+            <tr>
+               <th colspan="2">How did you become interesr us?</th>
+            </tr>
+            <tr>
+               <td colspan="2">
+                     Family<input name = "connection" type = "radio" value = "Family">
+                     Friends <input name = "connection" type = "radio" value = "Friends">
+                     Television<input name = "connection" type = "radio" value = "Television">
+                     Internet<input name = "connection" type = "radio" value = "Internet">
+                     Other<input name = "connection" type = "radio" value = "Other">
+               </td>
+            </tr>
+            <tr><th colspan="2">Departments Visited:
+                  <select name = "Departments">
+                  <option selected = "selected">Cockrell School of Engineering</option>
+                  <option> College of Education </option>
+                  <option> College of Fine Arts </option>
+                  <option> College of Liberal Arts </option>
+                  <option> College of Natural Sciences </option>
+                  <option> College of pharmacy </option>
+                  <option> Dell Medical School </option>
+                  <option> Graduate School </option>
+                  <option> Jackson School of Geosciences </option>
+                  <option> LBJ School of Public Affairs </option>
+                  <option> McCombs School of Business </option>
+                  <option> Moody College of Communication </option>
+                  <option> School of Architecture </option>
+                  <option> School of Information </option>
+                  <option> School of law </option>
+                  <option> School of Nursing </option>
+                  <option> Steve Hicks School of Social Work </option>
+                  <option> School of Undergraduate Studies </option>
+               </select>
+               </th>
+            </tr>
+            <tr><th>Additional Comments:</th>
+               <td><textarea name = "comments" rows = "4" cols = "36"> Enter your comments here: </textarea></td>
+            </tr>
+            <tr>
+               <td colspan="2"><input type = "submit" value = "Enter" >
+               <input type = "reset" value = "Clear" ></td>
+            </tr>
+      </table>
+   </form>
+</body>
+ </html>
