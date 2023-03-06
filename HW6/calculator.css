@@ -51,17 +51,17 @@ input[type=reset] {
 input[type=reset]:hover {
     background-color: lightskyblue;
 }
-button{
+input[type=button] {
     background-color: lightblue;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-button:hover{
+  }
+input[type=hover]:hover {
     background-color: lightskyblue;
-}
+  }
 * {
     box-sizing: border-box;
 }
