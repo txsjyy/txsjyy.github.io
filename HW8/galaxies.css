@@ -1,24 +1,32 @@
-.img1 {position: absolute; top: 50px; left: 27%; z-index: 0; width: 680px; height: 480px;}
-    .img2 {position: absolute; top: 50px; left: 27%; z-index: 0; width: 680px; height: 480px;}
-    .img3 {position: absolute; top: 50px; left: 27%; z-index: 0; width: 680px; height: 480px;}
-    .img4 {position: absolute; top: 50px; left: 27%; z-index: 0; width: 680px; height: 480px;}
-    .img5 {position: absolute; top: 50px; left: 27%; z-index: 0; width: 680px; height: 480px;}
-    .img6 {position: absolute; top: 50px; left: 27%; z-index: 0; width: 680px; height: 480px;}
-    .cap1 {position: absolute; top: 600px; width: 100%; z-index: 0;text-align: center;background-color: white;}
-    .cap2 {position: absolute; top: 600px; width: 100%; z-index: 0;text-align: center;background-color: white;}
-    .cap3 {position: absolute; top: 600px; width: 100%; z-index: 0;text-align: center;background-color: white;}
-    .cap4 {position: absolute; top: 600px; width: 100%; z-index: 0;text-align: center;background-color: white;}
-    .cap5 {position: absolute; top: 600px; width: 100%; z-index: 0;text-align: center;background-color: white;}
-    .cap6 {position: absolute; top: 600px; width: 100%; z-index: 0;text-align: center;background-color: white;}
+.img1 {position: absolute; top: 50px; left: 28vw; z-index: 0; width: 680px; height: 480px;}
+.img2 {position: absolute; top: 50px; left: 28vw; z-index: 0; width: 680px; height: 480px;}
+.img3 {position: absolute; top: 50px; left: 28vw; z-index: 0; width: 680px; height: 480px;}
+.img4 {position: absolute; top: 50px; left: 28vw; z-index: 0; width: 680px; height: 480px;}
+.img5 {position: absolute; top: 50px; left: 28vw; z-index: 0; width: 680px; height: 480px;}
+.img6 {position: absolute; top: 50px; left: 28vw; z-index: 0; width: 680px; height: 480px;}
+.cap1 {position: absolute; top: 600px; width: 50%; z-index: 0;text-align: center;background-color: white;}
+.cap2 {position: absolute; top: 600px; width: 50%; z-index: 0;text-align: center;background-color: white;}
+.cap3 {position: absolute; top: 600px; width: 50%; z-index: 0;text-align: center;background-color: white;}
+.cap4 {position: absolute; top: 600px; width: 50%; z-index: 0;text-align: center;background-color: white;}
+.cap5 {position: absolute; top: 600px; width: 50%; z-index: 0;text-align: center;background-color: white;}
+.cap6 {position: absolute; top: 600px; width: 50%; z-index: 0;text-align: center;background-color: white;}
 img{
     padding: 0rem 0rem;
     border: 1rem solid #aaaaff;
     border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, #aaaaff 6px, #aaaaff 15px, transparent 16px, transparent 20px) 20/1rem;
 }
 div{
+    left: 25vw;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     border: 1rem solid lavender;
-    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, lavender 6px, lavender 15px, transparent 16px, transparent 20px) 20/1rem;
+    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, lavender 6px, lavender 7px, transparent 8px, transparent 10px) 10/1rem;
 }
+html { 
+    background: url(back.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

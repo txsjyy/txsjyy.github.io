@@ -11,8 +11,8 @@ function calculate() {
         r = parseFloat(r/12)
         n = parseInt(n)
         var payment = p * r / (1 - (1 / (1 + r)**n))
-        document.getElementById('pay').innerHTML = Math.round(payment*100)/100
-        document.getElementById('sum').innerHTML = Math.round(payment*n*100)/100
-        document.getElementById('int').innerHTML = Math.round((payment*n-p)*100)/100
+        document.getElementById('pay').innerHTML = "$"+Math.round(payment*100)/100
+        document.getElementById('sum').innerHTML = "$"+Math.round(payment*n*100)/100
+        document.getElementById('int').innerHTML = "$"+Math.round((payment*n-p)*100)/100
     }
 }
