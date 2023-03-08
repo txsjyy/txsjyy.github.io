@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Travel Show</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="SlideShow">
+   <meta name="author" content="Junyu Yao">
+   <link rel="stylesheet" href="SlideShow.css">
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script> 
+</head> 
+
+<body onload="start()">
+    <div id="bd">
+        <h1>Travel Show</h1>
+        <img class="img1" id="slideimg" src="agra_fort.jpg" alt="(Picture of slide)">
+        <div>
+            <div id="left"><button id="bstart" onclick="restart()">Start</button></div>
+            <div class="cap1"><p id="slidecap">Agra Fort</p></div>
+            <div id="right"><button id="bstop" onclick="stop()">Stop</button></div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    var flag = 1;
+    var indexcnt = 0;
+    var img_src = new Array ("agra_fort.jpg","ajanta_ellora.jpeg","akshardham_temple.jpg","gateway_of_india.jpg","hawa_mahal.jpeg","mehrangarh_fort.jpg","mysore_palace.jpeg","qutub_minar.jpg","sun_temple.jpg","taj_mahal.jpeg","victoria_memorial.jpg");
+    var cap_src = new Array ("Agra Fort","Ajanta Ellora","Akshardham Temple","Gateway of India","Hawa Mahal","Mehrangarh Fort","Mysore Palace","Qutub Minar","Sun Temple","Taj Mahal","Victoria Memorial");
+    function start(){
+        setInterval(function() {
+            if (flag != 1) {
+            return;
+            console.log("stop")
+        } else {
+            if (indexcnt<11){
+                document.getElementById("slideimg").src = img_src[indexcnt];
+                document.getElementById("slidecap").innerHTML = cap_src[indexcnt];
+                indexcnt += 1;
+                console.log('aaa'+indexcnt);
+            }else{
+                indexcnt = 0;
+                document.getElementById("slideimg").src = img_src[indexcnt];
+                document.getElementById("slidecap").innerHTML = cap_src[indexcnt];
+                indexcnt += 1;
+                console.log("bbb"+indexcnt);
+            }
+        }
+        }, 3000)  
+    }
+    function stop(){
+        flag = 0
+        console.log("stop")
+    }
+    function restart(){
+        flag = 1
+    }
+</script>
