@@ -24,12 +24,12 @@
 .imageAboutPage {
     width: 100%;
 }
-/* services section css */
-.servicesText.card {
+/* skills section css */
+.skillsText.card {
     height: 280px;
     cursor: pointer;
   }
-.servicesIcon {
+.skillsIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
@@ -37,10 +37,10 @@
 .card-title {
     text-align: center;
 }
-.card:hover .servicesIcon {
+.card:hover .skillsIcon {
     color: #008000;
 }
-.servicesText:hover {
+.skillsText:hover {
     border: 1px solid #008000;
 }
 /* display background color black on navbar scroll */
@@ -64,10 +64,13 @@
     text-align: center;
 }
 /* spacing on all sections */
-#about, #services, #portfolio, #contact {
+#about, #skills, #portfolio, #contact {
     margin-top: 4rem;
     padding-top: 4rem;
 }
 #contact {
     padding-bottom: 4rem;
+}
+#skills{
+    padding-top: 4rem;
 }
