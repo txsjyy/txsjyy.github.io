@@ -26,7 +26,7 @@
 }
 /* skills section css */
 .skillsText.card {
-    /* height: 280px; */
+    height: 550px;
     cursor: pointer;
   }
 .skillsIcon {
@@ -73,4 +73,8 @@
 }
 #skills{
     padding-top: 4rem;
+}
+.card{
+    height: 650px;
+
 }
