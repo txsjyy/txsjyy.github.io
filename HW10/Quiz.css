@@ -1,0 +1,50 @@
+span{
+    font-size: 25;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+table { 
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    opacity: 0.8;
+}
+table th{
+    text-align: left;
+}
+  
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+input[type=reset] {
+background-color: lightblue;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+}
+input[type=reset]:hover {
+background-color: lightskyblue;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 4px;
+    resize: vertical;
+  }
